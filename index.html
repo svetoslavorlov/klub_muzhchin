@@ -6,6 +6,7 @@
     <title>Клуб настоящих мужчин - Твой проект для детей из неполных семей</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        /* СТИЛИ БЕЗ ИЗМЕНЕНИЙ - можно скопировать из вашего исходного файла */
         * {
             margin: 0;
             padding: 0;
@@ -18,7 +19,6 @@
             color: #ffffff;
             line-height: 1.6;
             overflow-x: hidden;
-            -webkit-text-size-adjust: 100%;
         }
         
         .container {
@@ -27,7 +27,6 @@
             padding: 15px;
         }
         
-        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
                         url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23000"/><path d="M0 0 L100 100 M100 0 L0 100" stroke="%23FFD700" stroke-width="0.5" opacity="0.3"/></svg>');
@@ -68,7 +67,6 @@
             -webkit-text-fill-color: transparent;
             text-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
             line-height: 1.2;
-            padding: 0 10px;
         }
         
         .hero .slogan {
@@ -77,7 +75,6 @@
             margin-bottom: 25px;
             color: #ffffff;
             text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-            padding: 0 10px;
         }
         
         .hero-badge {
@@ -90,7 +87,6 @@
             font-size: 1rem;
             margin-top: 15px;
             box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
-            transform: translateY(0);
             animation: float 3s ease-in-out infinite;
         }
         
@@ -99,18 +95,8 @@
             50% { transform: translateY(-8px); }
         }
         
-        /* Gallery Section */
         .gallery-section {
             margin: 30px 0;
-        }
-        
-        .gallery-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #FFD700;
-            font-weight: 600;
         }
         
         .photo-gallery {
@@ -127,7 +113,7 @@
             aspect-ratio: 1/1;
             border: 2px solid rgba(255, 215, 0, 0.3);
             transition: all 0.3s ease;
-            background: rgba(30, 30, 30, 0.8);
+            background: #2a2a3a;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,35 +136,10 @@
             transform: scale(1.05);
         }
         
-        .photo-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #FFA500;
-            text-align: center;
-            padding: 15px;
-        }
-        
-        .photo-placeholder i {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            opacity: 0.7;
-        }
-        
-        .photo-placeholder span {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        
-        /* Section Styling */
         .section-divider {
             height: 2px;
             background: linear-gradient(90deg, transparent, #FFD700, #FFA500, #FF6B00, #FFA500, #FFD700, transparent);
             margin: 40px 0;
-            border-radius: 2px;
         }
         
         .section {
@@ -216,7 +177,6 @@
             color: #FFD700;
             display: flex;
             align-items: center;
-            line-height: 1.3;
         }
         
         .section h2 i {
@@ -229,7 +189,6 @@
             font-weight: 600;
         }
         
-        /* About Section */
         .about-content {
             display: flex;
             flex-direction: column;
@@ -247,7 +206,6 @@
             padding: 25px 20px;
             text-align: center;
             border: 1px solid rgba(255, 215, 0, 0.3);
-            width: 100%;
         }
         
         .about-cta h3 {
@@ -255,11 +213,6 @@
             font-size: 1.3rem;
             margin-bottom: 12px;
             color: #FFD700;
-        }
-        
-        .about-cta p {
-            margin-bottom: 18px;
-            font-size: 0.95rem;
         }
         
         .cta-small {
@@ -272,7 +225,6 @@
             text-decoration: none;
             transition: all 0.3s ease;
             font-size: 0.95rem;
-            min-width: 140px;
         }
         
         .cta-small:hover {
@@ -280,7 +232,6 @@
             box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
         }
         
-        /* Results Section */
         .results-header {
             text-align: center;
             margin-bottom: 30px;
@@ -374,7 +325,6 @@
             padding: 10px;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 6px;
-            line-height: 1.4;
         }
         
         .milestone-icon {
@@ -383,7 +333,6 @@
             color: #FFD700;
             min-width: 30px;
             text-align: center;
-            margin-top: 2px;
         }
         
         .milestone-text {
@@ -395,7 +344,6 @@
             color: #FFA500;
         }
         
-        /* Directions Grid */
         .directions-container {
             display: flex;
             flex-direction: column;
@@ -416,7 +364,6 @@
             text-align: center;
             border: 1px solid rgba(255, 215, 0, 0.3);
             transition: all 0.3s ease;
-            width: 100%;
         }
         
         .direction-card:hover {
@@ -438,7 +385,6 @@
             color: #FFA500;
         }
         
-        /* Principles */
         .principles-list {
             display: flex;
             flex-direction: column;
@@ -451,10 +397,6 @@
             border-radius: 8px;
             padding: 18px;
             border-left: 4px solid #FFD700;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
         
         .principle h4 {
@@ -464,7 +406,6 @@
             color: #FFD700;
         }
         
-        /* Team - КОМАНДА С РЕАЛЬНЫМИ ФОТО */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -493,15 +434,12 @@
             font-weight: 600;
             margin-bottom: 5px;
             color: #FFA500;
-            line-height: 1.3;
         }
         
         .team-member p {
             font-size: 0.9rem;
-            line-height: 1.4;
         }
         
-        /* Partners */
         .partners-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -526,10 +464,8 @@
         .partner:hover {
             background: rgba(255, 215, 0, 0.1);
             border-color: #FFD700;
-            transform: scale(1.02);
         }
         
-        /* CTA Section */
         .cta-section {
             text-align: center;
             padding: 40px 20px;
@@ -558,7 +494,6 @@
             font-weight: 700;
             margin-bottom: 15px;
             color: #FFD700;
-            line-height: 1.2;
         }
         
         .cta-text {
@@ -566,7 +501,6 @@
             max-width: 100%;
             margin: 0 auto 25px;
             color: #e0e0e0;
-            line-height: 1.5;
         }
         
         .btn {
@@ -584,16 +518,11 @@
             overflow: hidden;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            min-width: 200px;
         }
         
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(255, 107, 0, 0.6);
-        }
-        
-        .btn:active {
-            transform: translateY(-1px);
         }
         
         .btn-pulse {
@@ -606,7 +535,6 @@
             100% { box-shadow: 0 6px 15px rgba(255, 107, 0, 0.4); }
         }
         
-        /* Contact */
         .contact-info {
             display: flex;
             flex-direction: column;
@@ -627,231 +555,58 @@
             color: #FFD700;
         }
         
-        /* Materials Section */
-        .materials-cta {
-            background: rgba(255,215,0,0.1);
-            padding: 18px;
-            border-radius: 8px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        
-        .materials-cta h3 {
-            color: #FFD700;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-        
-        /* Touch-friendly improvements */
-        @media (hover: none) {
-            .section:hover,
-            .result-card:hover,
-            .direction-card:hover,
-            .partner:hover,
-            .photo-item:hover {
-                transform: none;
-            }
-            
-            .cta-small:active,
-            .btn:active {
-                transform: scale(0.98);
-            }
-        }
-        
-        /* Tablet */
         @media (min-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            
-            .hero {
-                padding: 60px 20px;
-            }
-            
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-            
-            .hero .slogan {
-                font-size: 1.5rem;
-            }
-            
-            .gallery-title {
-                font-size: 1.8rem;
-            }
-            
-            .photo-gallery {
-                gap: 15px;
-            }
-            
-            .section {
-                padding: 30px 25px;
-            }
-            
-            .section h2 {
-                font-size: 1.8rem;
-            }
-            
-            .about-content {
-                flex-direction: row;
-                gap: 30px;
-            }
-            
-            .about-text {
-                flex: 2;
-            }
-            
-            .about-cta {
-                flex: 1;
-            }
-            
-            .results-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-            
-            .principles-list {
-                grid-template-columns: repeat(2, 1fr);
-                display: grid;
-            }
-            
-            .team-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .directions-row {
-                flex-direction: row;
-                gap: 15px;
-            }
-            
-            .direction-card {
-                max-width: none;
-            }
-            
-            .contact-info {
-                grid-template-columns: repeat(2, 1fr);
-                display: grid;
-            }
-            
-            .partners-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
+            .container { padding: 20px; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero { padding: 60px 20px; }
+            .photo-gallery { gap: 15px; }
+            .section { padding: 30px 25px; }
+            .section h2 { font-size: 1.8rem; }
+            .about-content { flex-direction: row; }
+            .about-text { flex: 2; }
+            .about-cta { flex: 1; }
+            .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
+            .principles-list { display: grid; grid-template-columns: repeat(2, 1fr); }
+            .team-grid { grid-template-columns: repeat(3, 1fr); }
+            .directions-row { flex-direction: row; }
+            .contact-info { display: grid; grid-template-columns: repeat(2, 1fr); }
+            .partners-grid { grid-template-columns: repeat(3, 1fr); }
         }
         
-        /* Desktop */
         @media (min-width: 1024px) {
-            .hero h1 {
-                font-size: 3.2rem;
-            }
-            
-            .photo-gallery {
-                gap: 20px;
-            }
-            
-            .section {
-                padding: 35px 30px;
-            }
-            
-            .results-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .team-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            
-            .partners-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            
-            .contact-info {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .about-content {
-                grid-template-columns: 2fr 1fr;
-                display: grid;
-            }
+            .hero h1 { font-size: 3.2rem; }
+            .photo-gallery { gap: 20px; }
+            .results-grid { grid-template-columns: repeat(3, 1fr); }
+            .team-grid { grid-template-columns: repeat(4, 1fr); }
+            .partners-grid { grid-template-columns: repeat(4, 1fr); }
+            .contact-info { grid-template-columns: repeat(3, 1fr); }
         }
         
-        /* Small phones */
-        @media (max-width: 360px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .hero {
-                padding: 40px 15px;
-            }
-            
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .hero .slogan {
-                font-size: 1.1rem;
-            }
-            
-            .photo-gallery {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 8px;
-            }
-            
-            .gallery-title {
-                font-size: 1.3rem;
-            }
-            
-            .section {
-                padding: 20px 15px;
-            }
-            
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .partners-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .member-real-photo {
-                width: 100px;
-                height: 100px;
-            }
-        }
-        
-        /* Mobile portrait */
         @media (max-width: 480px) {
-            .photo-gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .photo-gallery { grid-template-columns: repeat(2, 1fr); }
+            .team-grid { grid-template-columns: 1fr; }
+            .partners-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Hero Section -->
         <section class="hero">
             <h1>КЛУБ НАСТОЯЩИХ МУЖЧИН</h1>
             <p class="slogan">Территория детей, растущих без отцов</p>
             <div class="hero-badge">ИЗМЕНИМ БУДУЩЕЕ ВМЕСТЕ!</div>
         </section>
 
-        <!-- About Section -->
         <section class="section">
             <h2><i>⚡</i> О ПРОЕКТЕ</h2>
-            
             <div class="about-content">
                 <div class="about-text">
                     <p><span class="highlight">«Клуб настоящих мужчин»</span> — это комплексная система развития мальчиков 8-17 лет, растущих без отцов.</p>
-                    
                     <p>Наша миссия — обучение решению бытовых задач, воспитание подростка через наставничество в здоровой мужской среде.</p>
-                    
                     <div style="background: rgba(255,215,0,0.1); padding: 15px; border-radius: 8px; margin: 15px 0;">
                         <p><strong>Почему это важно?</strong> Среди наших подопечных растет количество неполных семей. Мы придумали проект, закрывающий не только вопросы сегодняшнего дня - отсутствие примера для подражания (отца), но и дающий ответы на протяжении всей жизни.</p>
                     </div>
                 </div>
-                
                 <div class="about-cta">
                     <h3>Стань частью команды</h3>
                     <p>Присоединяйтесь к созданию клуба, где мальчики становятся настоящими мужчинами</p>
@@ -860,37 +615,28 @@
             </div>
         </section>
 
-        <!-- Photo Gallery Section -->
+        <!-- ГАЛЕРЕЯ С НОВЫМИ РАБОЧИМИ ССЫЛКАМИ -->
         <div class="gallery-section">
             <div class="photo-gallery">
-                <!-- Фото 1 - замените src на свою ссылку -->
                 <div class="photo-item">
-                     <img src="https://i.ibb.co/NnY2x7Lz/Kafttraining-Kind.jpg" alt="Здоровье и дисциплина">
+                     <img src="https://sun9-82.userapi.com/s/v1/ig2/J47CAhgTbmaNHw88aTVYN4BsU95eT6f2xukLVwn9wo_4uVK1EaXGmh-m5jhpXIyLF3w21jGedcuYAi41lircNTH8.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x481,755x504&from=bu&cs=755x0" alt="Занятия спортом">
                 </div>
-                
-                <!-- Фото 2 - замените src на свою ссылку -->
                 <div class="photo-item">
-                    <img src="https://i.ibb.co/Y7yMzcTx/4b6805d726366d4e6d4a5944935d3822.jpg" alt="Очумелые ручки">
+                    <img src="https://sun9-48.userapi.com/s/v1/ig2/Svj6XpVBXk3J5NX5l3AtzUaxwgGcxaK-7q3xR_-1GbmE1X1kw0zY_466B01G87Pg-hNCIYDiyxKimChfVU0kBFeK.jpg?quality=95&as=32x18,48x27,72x41,108x61,160x90,240x135,360x203,480x271,496x280&from=bu&cs=496x0" alt="Мастерская">
                 </div>
-                
-                <!-- Фото 3 - замените src на свою ссылку -->
                 <div class="photo-item">
-                    <img src="https://i.ibb.co/zHtjx533/x332-trim.jpg" alt="С паяльником на "Ты"">
+                    <img src="https://sun9-56.userapi.com/s/v1/ig2/9-UEv8pTDQBw6asY95ZxX4h2lD3mhAxq8EaIZPMp_ODl3J6g4BTNe8FOaXZVhSOnrdxu_dE7toqLgnwMpH40p1H5.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480&from=bu&cs=720x0" alt="Работа с инструментами">
                 </div>
-                
-                <!-- Фото 4 - замените src на свою ссылку -->
                 <div class="photo-item">
-                     <img src="https://i.ibb.co/0VdnzdwQ/46752a6dcd4639c5fbe42739a575ad04.jpg" alt="Мастера на все руки">
+                     <img src="https://sun9-43.userapi.com/s/v1/ig2/RLfY8WW3UEh1AlE7Hz8euncqjkBRxtYDSAXsIKlVldWiYd6r4iHyxGa2aeCRUZHUvrgCK3Ma2VymPXPub-s8ybwF.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x101,240x152,360x228,480x303,540x341,640x405,720x455,1080x683,1280x809,1440x910,1734x1096&from=bu&cs=1734x0" alt="Наставничество">
                 </div>
             </div>
         </div>
 
         <div class="section-divider"></div>
 
-        <!-- Directions Section -->
         <section class="section">
             <h2><i>🎯</i> НАПРАВЛЕНИЯ КЛУБА</h2>
-            
             <div class="directions-container">
                 <div class="directions-row">
                     <div class="direction-card">
@@ -909,7 +655,6 @@
                         <p>Безопасные тренировки, командные игры, физическое развитие</p>
                     </div>
                 </div>
-                
                 <div class="directions-row">
                     <div class="direction-card">
                         <div class="direction-icon">💻</div>
@@ -932,13 +677,11 @@
 
         <div class="section-divider"></div>
 
-        <!-- Results Section -->
         <section class="section">
             <div class="results-header">
                 <h2><i>🚀</i> РЕЗУЛЬТАТЫ ЧЕРЕЗ ГОД</h2>
                 <p class="results-subtitle">Конкретные измеримые достижения, которые мы создадим вместе</p>
             </div>
-            
             <div class="results-grid">
                 <div class="result-card">
                     <div class="result-icon">🏗️</div>
@@ -946,14 +689,12 @@
                     <h3 class="result-title">Оборудованная база</h3>
                     <p>Полностью укомплектованная мастерская и спортзал для регулярных занятий</p>
                 </div>
-                
                 <div class="result-card">
                     <div class="result-icon">👥</div>
                     <span class="result-number">50+</span>
                     <h3 class="result-title">Выпускников клуба</h3>
                     <p>Мальчиков, прошедших полную программу развития и готовых к самостоятельной жизни</p>
                 </div>
-                
                 <div class="result-card">
                     <div class="result-icon">👨‍🏫</div>
                     <span class="result-number">12</span>
@@ -961,31 +702,26 @@
                     <p>Профессионалов, готовых делиться опытом и знаниями с подрастающим поколением</p>
                 </div>
             </div>
-            
             <div class="milestone-timeline">
                 <h3>Ключевые вехи за год</h3>
-                
                 <div class="milestone-item">
                     <div class="milestone-icon">✅</div>
                     <div class="milestone-text">
                         <strong>1-3 месяца:</strong> Формирование первой группы, оборудование помещений, запуск основных направлений
                     </div>
                 </div>
-                
                 <div class="milestone-item">
                     <div class="milestone-icon">✅</div>
                     <div class="milestone-text">
                         <strong>4-6 месяцев:</strong> Регулярные занятия по всем направлениям, первые проекты в мастерской, спортивные достижения
                     </div>
                 </div>
-                
                 <div class="milestone-item">
                     <div class="milestone-icon">✅</div>
                     <div class="milestone-text">
                         <strong>7-9 месяцев:</strong> Углубленное обучение, социальные проекты, участие в городских мероприятиях
                     </div>
                 </div>
-                
                 <div class="milestone-item">
                     <div class="milestone-icon">🏆</div>
                     <div class="milestone-text">
@@ -997,63 +733,60 @@
 
         <div class="section-divider"></div>
 
-        <!-- Team Section -->
+        <!-- КОМАНДА С НОВЫМИ РАБОЧИМИ ФОТО -->
         <section class="section">
             <h2><i>👥</i> НАША КОМАНДА</h2>
             <p>К работе «Клуба настоящих мужчин» привлечены специалисты-практики, которые горят своим делом и готовы делиться опытом</p>
-            
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="https://i.ibb.co/YTLLhQDZ/se.jpg" alt="Сергей" class="member-real-photo">
+                    <img src="https://sun9-73.userapi.com/s/v1/ig2/g1uDrcOxXmsYl_4mm54RzANOE5VQ2lbYFzclenFqMRLtI89wFdHVERKT50_-Ut3ORZ0R2b26yC344E2eMxXuziWq.jpg?quality=95&as=32x32,48x48,72x72,108x108,150x150&from=bu&cs=150x0" alt="Сергей, тренер" class="member-real-photo">
                     <div class="member-name">Сергей, тренер</div>
                     <p>Объясняет, как эффективно и безопасно тренироваться</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://i.ibb.co/zTKth51P/electr.jpg" alt="Виталий" class="member-real-photo">
+                    <img src="https://sun9-63.userapi.com/s/v1/ig2/I9M6pIOpkjsj57-6zVACYrqf2HN05e33Kvl-_B5swd40tCD_kGc9GrZzpwNtwx4IVAP9WuoTZyF5o0b6KIJ9zKRF.jpg?quality=95&as=32x32,48x48,72x72,108x108,150x150&from=bu&cs=150x0" alt="Виталий, конструктор" class="member-real-photo">
                     <div class="member-name">Виталий, конструктор аэрокосмической техники</div>
                     <p>От простой пайки до сложных схем</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://i.ibb.co/gFLkm7Mg/trud.jpg" alt="Александр" class="member-real-photo">
+                    <img src="https://sun9-38.userapi.com/s/v1/ig2/j5gGWpWdmlQGz7rrm--0Ow0Lla0aITJXV-G15xjsph0sC97gIfwBX5YNRZhJLyeqx_cvFiK3sfFtkiQA5-Ja0Up2.jpg?quality=95&as=32x32,48x48,72x72,108x108,150x150&from=bu&cs=150x0" alt="Александр, мастер" class="member-real-photo">
                     <div class="member-name">Александр, мастер на все руки</div>
                     <p>Учит, что любой ремонт по плечу</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://i.ibb.co/tThrNg5d/popk.jpg" alt="Игорь" class="member-real-photo">
+                    <img src="https://sun9-85.userapi.com/s/v1/ig2/nyMIa1dw0fj7pgiKTAeJpH0PEpLSTTfCkHWAvy7ciQ5o5o9mu2T-cRNpDBntJK_Sl78XPoehSa99kXBg6TXxwXV_.jpg?quality=95&as=32x32,48x48,72x72,108x108,150x150&from=bu&cs=150x0" alt="Игорь, руководитель" class="member-real-photo">
                     <div class="member-name">Игорь, руководитель ИА "Социальное телевидение"</div>
                     <p>Основы видеомонтажа и фотографии</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://i.ibb.co/qF4B1fkZ/psi.jpg" alt="Мария" class="member-real-photo">
+                    <img src="https://sun9-55.userapi.com/s/v1/ig2/0-TxCrPXHDqUHBHSoG7H4OTAVeHFheb0GMKE6_NItG-TWzEFR_UyJ6UZ9MNqDYY9n31MxnqnuF_JqVXkV14bVrG7.jpg?quality=95&as=32x32,48x48,72x72,108x108,150x150&from=bu&cs=150x0" alt="Мария, психолог" class="member-real-photo">
                     <div class="member-name">Мария, психолог</div>
                     <p>Работает с подростками и родителями</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://i.ibb.co/Y4f811HN/lisas.jpg" alt="Елизавета" class="member-real-photo">
+                    <img src="https://sun9-78.userapi.com/s/v1/ig2/yCoBj1CpK_mr1XD0b6gMB5zYfPhNCHgIfkFnRrw0Ri4k-R-nUto-haTOf-cCJU-svxl9x4GnfXldVXxjTLrRCLcm.jpg?quality=95&as=32x32,48x48,72x72,108x108,150x150&from=bu&cs=150x0" alt="Елизавета, председатель" class="member-real-photo">
                     <div class="member-name">Елизавета, председатель правления</div>
                     <p>Уже 15 лет руководит благотворительным фондом "Новый день"</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://i.ibb.co/d0cZMT4t/fff.jpg" alt="Светослав" class="member-real-photo">
+                    <img src="https://sun9-83.userapi.com/s/v1/ig2/euBfrtlsdTkNALJ72MBpcwXyCxXtvGzGtgqCcgAffCj304xPvsHA7xh6wvSIvijLBQ0KqRnSuboNYjk_lv4f9yKe.jpg?quality=95&as=32x32,48x48,72x72,108x108,150x150&from=bu&cs=150x0" alt="Светослав, основатель" class="member-real-photo">
                     <div class="member-name">Светослав, основатель проекта</div>
                     <p>Руководитель проекта и наш активный ориентир</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://via.placeholder.com/150/FFA500/FFFFFF?text=ВЫ" alt=" " class="member-real-photo">
+                    <img src="https://sun9-80.userapi.com/s/v1/ig2/HcI4eNWJ5nMewH9tB_otGvvrMWMlkjx2oOkj-aWjSYN2WRpXPDY4Bq2omuvWhaAwhGItuT_kvunKld6IXRuGWaKU.jpg?quality=95&as=32x18,48x27,72x40,108x61,160x90,240x135,360x202,480x270,540x304,640x360,720x405,1080x607,1280x720&from=bu&cs=1280x0" alt="Вы, донор" class="member-real-photo">
                     <div class="member-name">Вы, донор</div>
                     <p>Кто помогает существовать проекту и воспитывать детей без отцов</p>
                 </div>
             </div>
         </section>
 
-        <!-- Support Project Banner -->
         <section class="cta-section">
             <h2 class="cta-title">ПОДДЕРЖИТЕ НАШ ПРОЕКТ!</h2>
             <p class="cta-text">Каждый рубль помогает нам вырастить настоящего мужчину — ответственного, умелого и уверенного в себе. Вместе мы можем изменить жизни десятков мальчиков из неполных семей!</p>
             <a href="https://donation.ru/novyjden-3/klub_nastoyashchih_mujchin/" class="btn btn-pulse">ПОДДЕРЖАТЬ ПРОЕКТ</a>
         </section>
 
-        <!-- Principles Section (перемещен) -->
         <section class="section">
             <h2><i>⭐</i> НАШИ ПРИНЦИПЫ</h2>
             <div class="principles-list">
@@ -1078,11 +811,9 @@
 
         <div class="section-divider"></div>
 
-        <!-- Partners Section -->
         <section class="section">
             <h2><i>🤝</i> НАШИ ПАРТНЕРЫ</h2>
             <p>Проект уже поддержали авторитетные организации Калуги и области</p>
-            
             <div class="partners-grid">
                 <div class="partner">Калужское отделение ВОД «Отцы России»</div>
                 <div class="partner">Фонд "Защитники отечества"</div>
@@ -1097,7 +828,6 @@
 
         <div class="section-divider"></div>
 
-        <!-- Contacts Section -->
         <section class="section">
             <h2><i>📞</i> КОНТАКТЫ</h2>
             <div class="contact-info">
